@@ -19,7 +19,7 @@ var (
 	SystemField = zap.String("system", "grpc")
 
 	// ServerField is used in every server-side log statement made through grpc_zap.Can be overwritten before initialization.
-	ServerField = zap.String("span.kind", "server")
+	ServerField = zap.String("grpc_span_kind", "server")
 )
 
 // UnaryServerInterceptor returns a new unary server interceptors that adds zap.Logger to the context.
